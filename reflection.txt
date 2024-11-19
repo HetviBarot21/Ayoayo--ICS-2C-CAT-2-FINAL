@@ -1,0 +1,55 @@
+set up: 
+- each player has 6 slots, and its a 2 player game
+- each hole has 4 seeds
+
+playing:
+- any player can start the game
+- the player that is starting picks all the seeds from any hole on his side and places one seed in each hole in the anti clockwise direction
+- then the openent does the same, picks all the seeds from any hole on their side and puts one seed in each hole in the anticlockwise direction
+- when the last seed in your hands lands in your store, you take another turn
+- when the last seed from your hand lands in your own empty pit, you get to keep all the pits from the opposite opponents pit
+- put all those seeds and the one seed in your previously empty puit into your store and the game then continues
+
+ the end:
+ - when either of the players has no seeds left on their side
+all the seeds on the other seeds are won by the player whose side that is
+- whoever has the most seeds at the end when one players entire row is empty, wins
+
+code requirement:
+- a class called Ayoayo
+- a constructor for the 2 players which will take string parameters
+for their names (createPlayer)
+- a printBoard method to show current board information
+- a method to display the name of the winner: "winner is player(1/2): name"
+    - if its a tie needs to return that there was a tie "Game not ended"
+    - have a playGame method
+
+worries: 
+- array implemetataion logic?
+- how to keep track of the players moves?
+
+final thoughts:
+- Initially, I planned to implement the game logic in a straightforward manner,
+ focusing on the basic rules and player interactions. 
+ However, as I started coding, 
+ I realized that the array implementation for tracking seeds 
+ and player moves was more complex than I anticipated. I had to rethink my approach 
+ to ensure that the game mechanics were accurately represented.
+
+- One significant change I made was to introduce a more structured way to handle player turns 
+and seed distribution. This involved creating helper methods to manage the state of the 
+board and validate moves, which helped streamline the gameplay and reduce errors.
+
+- Throughout development, I faced challenges with ensuring that the game rules were 
+correctly enforced, especially regarding the conditions for taking extra turns and capturing seeds. 
+To overcome this, I created a series of test cases that simulated various game scenarios,
+ allowing me to identify and fix bugs more efficiently.
+
+- A key takeaway from this project is the importance of flexibility in planning. 
+While having a clear initial vision is helpful, being open to adjustments based 
+on real-world coding challenges is crucial. Additionally, I learned the value 
+of thorough testing and validation in game development, as it can significantly
+ enhance the user experience and ensure fair play.
+
+Overall, this project was a rewarding experience that deepened my understanding of
+ game mechanics and reinforced my problem-solving skills.
